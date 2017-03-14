@@ -322,6 +322,8 @@ class Board(object):
         curr_time_millis = lambda: 1000 * timeit.default_timer()
 
         while True:
+            
+            print(self.to_string())
 
             legal_player_moves = self.get_legal_moves()
 
